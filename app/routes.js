@@ -20,13 +20,7 @@ module.exports = function(app, passport) {
 			dport : 22,
 			sudo : true
 		});
-		  iptables.drop({
-			protocol : 'tcp',
-			dport : 22,
-			sudo : true
-		});
-
-	
+		 
         res.render('profile.ejs', {
             user : req.user,
 			ip : replaceClientIp
